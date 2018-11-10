@@ -4,52 +4,51 @@
 	<meta charset="UTF-8">
 	<title>Williamson Hangman Game</title>
 	
-	<!-- Bootstrap CDN -->
+	
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi21kFfwwEAa8hDOdjZ1pLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
-
-</head>
+	<style>
+		.jumbotron {
+			background-color:#002144;
+			color:#D7083B;
+			border: 10px dotted white;
+		}
+	</style>
 
 <body>
-	<div class="container">
+	<div class="container" >
 		<div class="jumbotron">
 			<h1>Indians' 'Hall Of Fame' Game!</h1>
-			<p>Guess that Tribe legend</p>
+			<p style="text-decoration:underline;">Guess that Tribe legend</p>
 	</div>
 
-	<div class="panel panel-default">
+	<div class="panel panel-default" style="background-color:#D7083B; color:#002144;">
 		<div class="panel-heading">
-			<h3 class="panel-title">Word to Guess</h3>
+			<h3 class="panel-title">Guess that Trbe Great!</h3>
 		</div>
 		<div class="panel-body">
 			<h2 id="wordToGuess">_ _ _ _ _ _ _</h2>
 		</div>
 	</div>
 	 
-	<div class="panel panel-default">
+	<div class="panel panel-default" style="background-color: #7cfc00;">
 	 	<div class="panel-body">
-	 		Wrong Guesses: <span id="wrongGuesses"></span>
+	 		Swing and a Miss: <span id="wrongGuesses"></span>
 		</div>
 	</div>
 	
-	<div class="panel panel-default">
+	<div class="panel panel-default" style="background-color: #7cfc00;" >
 		<div class="panel-body">
-			Guesses Left: <span id="numGuesses"></span>
+			Outs Left: <span id="numGuesses"></span>
 		</div>
 	</div>
 	
-	<div class="panel panel-default">
+	<div class="panel panel-default" style="background-color: #c2b280;">
 		<div class="panel-body">
-			Win Counter: <span id="winCounter">0</span>
+			<span id="winCounter">0</span> - <span id="lossCounter">0</span>
 		</div>
 	</div>
 	
-	<div class="panel panel-default">
-		<div class="panel-body">
-			Loss Counter:  <span id="lossCounter">0</span>
-		</div>
-	</div>
 	
 </div>
 <script type="text/javascript" src="assets/js/hangman.js"></script>
